@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  /* position: fixed; */
+  z-index: 3;
+  height: 0px;
+}
+.nav .logo img {
+  position: relative;
+  height: 120px;
+  position: absolute !important;
+}
+.nav .nav-items ul li {
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(163, 163, 116);
+}
+.nav-items ul li a:hover {
+  color: orange;
+}
+.nav-items ul li button {
+  background-color: rgb(255, 166, 99);
+  color: white;
+  box-shadow: 0 0 5px;
+}
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-items button {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+
+.hero .hero-text .image-block {
+  display: inline-block;
+  bottom: 140px;
+  left: 800px;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: red;
+  background-image: url("https://images.unsplash.com/photo-1497322313607-9fa0c2c4c4f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=437&q=80");
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1601039727490-458d3e7f2799?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80");
+
+  /* Set a specific height */
+  height: 80vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 125px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  margin-left: 20px;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text h1 {
+  font-size: 4rem;
+}
+.hero-text button {
+  padding: 10px;
+  margin-top: 40px;
+  background-color: rgb(255, 166, 49);
+  color: white;
+
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+}
+.about-section {
+  height: 100vh;
+  position: relative;
+}
+
+.about-section {
+  position: relative;
+  padding: 120px 0px;
+  margin-top: 40px;
+}
+
+.about-section .content-column {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.about-section .content-column .inner-column {
+  position: relative;
+  padding-top: 50px;
+  padding-right: 100px;
+}
+
+.about-section .content-column .text {
+  position: relative;
+  color: #777777;
+  font-size: 15px;
+  line-height: 2em;
+  margin-bottom: 40px;
+}
+
+.about-section .content-column .email {
+  position: relative;
+  color: #252525;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.about-section .image-column {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about-section .image-column .inner-column {
+  position: relative;
+  padding: 40px 40px 0px 0px;
+  margin-left: 50px;
+}
+
+.about-section .image-column .inner-column:after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 0px;
+  left: 40px;
+  bottom: 100px;
+  z-index: -1;
+  border: 2px solid #d7a449;
+}
+
+.about-section .image-column .inner-column .image {
+  position: relative;
+}
+
+.about-section .image-column .inner-column .image:before {
+  position: absolute;
+  content: "";
+  left: -50px;
+  bottom: -50px;
+  width: 299px;
+  height: 299px;
+  background: url(img/pattern-2.png) no-repeat;
+}
+
+.about-section .image-column .inner-column .image img {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.about-section .image-column .inner-column .image .overlay-box {
+  position: absolute;
+  left: 40px;
+  bottom: 48px;
+}
+
+.about-section .image-column .inner-column .image .overlay-box .year-box {
+  position: relative;
+  color: #252525;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4em;
+  padding-left: 125px;
+}
+
+.about-section
+  .image-column
+  .inner-column
+  .image
+  .overlay-box
+  .year-box
+  .number {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 110px;
+  height: 110px;
+  color: #d7a449;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 105px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.about-section .btn-style-three:before {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+  right: -10px;
+  bottom: -10px;
+  background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
+}
+.about-section .btn-style-three:hover {
+  color: #ffffff;
+  background: #d7a449;
+}
+.about-section .btn-style-three {
+  position: relative;
+  line-height: 24px;
+  color: #252525;
+  font-size: 15px;
+  font-weight: 700;
+  background: none;
+  display: inline-block;
+  padding: 11px 40px;
+  background-color: #ffffff;
+  text-transform: capitalize;
+  border: 2px solid #d7a449;
+  font-family: "Arimo", sans-serif;
+}
+.sec-title2 {
+  color: #fff;
+}
+.sec-title {
+  position: relative;
+  padding-bottom: 40px;
+}
+.sec-title .title {
+  position: relative;
+  color: #d7a449;
+  font-size: 18px;
+  font-weight: 700;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.sec-title .title:before {
+  position: absolute;
+  content: "";
+  right: 0px;
+  bottom: 7px;
+  width: 40px;
+  height: 1px;
+  background-color: #bbbbbb;
+}
